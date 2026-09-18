@@ -14,10 +14,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/site.css?v=11">
+<link rel="stylesheet" href="assets/site.css?v=12">
 <script>(function(){try{var t=localStorage.getItem('solviqo-theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+<script>try{if(!sessionStorage.getItem('sv-seen')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('is-loading');}catch(e){}</script>
 </head>
 <body>
+<div class="loader" aria-hidden="true"><div class="ld-in">
+  <svg class="ld-mark" viewBox="0 0 240 240"><g fill="none" stroke-width="18" stroke-linecap="square">
+    <g transform="translate(70,168) rotate(-25) scale(0.62)"><polyline class="ld-c1" points="-27,-30 28,0 -27,30"/></g>
+    <g transform="translate(118,128) rotate(-12) scale(0.82)"><polyline class="ld-c2" points="-27,-30 28,0 -27,30"/></g>
+    <g transform="translate(172,72) rotate(2) scale(1.05)"><polyline class="ld-c3" points="-27,-30 28,0 -27,30"/></g></g></svg>
+  <div class="ld-bar"><i></i></div>
+</div></div>
 <a class="skip" href="#main">Skip to content</a>
 <div class="mesh" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
@@ -262,6 +270,6 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=10"></script>
+<script src="assets/site.js?v=11"></script>
 </body>
 </html>

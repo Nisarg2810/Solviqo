@@ -451,3 +451,22 @@
   if (doc.readyState === 'loading') doc.addEventListener('DOMContentLoaded', boot);
   else boot();
 })();
+
+/* first-visit loader: logo draws, bar fills, then the page is revealed (about 1.2s, never more than 1.8s) */
+(function () {
+  var h = document.documentElement, done = false;
+  if (!h.classList.contains('is-loading')) return;
+  function finish() {
+    if (done) return; done = true;
+    setTimeout(function () {
+      h.classList.add('ld-done');
+      setTimeout(function () {
+        h.classList.add('ld-out');
+        try { sessionStorage.setItem('sv-seen', '1'); } catch (e) {}
+        setTimeout(function () { h.classList.remove('is-loading', 'ld-done', 'ld-out'); }, 650);
+      }, 300);
+    }, Math.max(0, 1050 - performance.now()));
+  }
+  if (document.readyState === 'complete') finish();
+  else { window.addEventListener('load', finish); setTimeout(finish, 1500); }
+})();
