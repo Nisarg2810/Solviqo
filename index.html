@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/site.css?v=12">
+<link rel="stylesheet" href="assets/site.css?v=14">
 <script>(function(){try{var t=localStorage.getItem('solviqo-theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <script>try{if(!sessionStorage.getItem('sv-seen')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('is-loading');}catch(e){}</script>
 </head>
@@ -48,6 +48,7 @@
       <a href="contact.html">Contact</a>
     </nav>
     <div class="nav-right">
+      <button class="cmdk-btn" id="cmdkBtn" type="button" aria-label="Search the site"></button>
       <a class="btn btn-primary btn-sm" href="contact.html">Book a call<span class="shine"></span></a>
       <button id="themeBtn" class="theme-btn" aria-label="Switch to light mode" aria-pressed="false">
         <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.4M12 19.6V22M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2 12h2.4M19.6 12H22M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
@@ -124,7 +125,7 @@
         <h2>What we build, in one minute.</h2>
         <p>From a business held together by spreadsheets to one app your whole team runs on. Press play, or let it run.</p>
       </div>
-      <div class="rev"><iframe class="demo-frame reel" data-src="demos/showreel.html?v=1" title="One minute showreel of what Solviqo builds" loading="lazy"></iframe></div>
+      <div class="rev"><iframe class="demo-frame reel" data-src="demos/showreel.html?v=3" title="One minute showreel of what Solviqo builds" loading="lazy"></iframe></div>
     </div>
   </section>
 
@@ -270,6 +271,7 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=11"></script>
+<script src="assets/site.js?v=12"></script>
+<script src="assets/features.js?v=4"></script>
 </body>
 </html>

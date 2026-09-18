@@ -4,6 +4,8 @@
   if (embed) document.documentElement.classList.add('embed');
   var qt = (location.search.match(/theme=(light|dark)/) || [])[1];
   if (qt === 'light') document.documentElement.classList.add('light');
+  var mini = /[?&]mini=1/.test(location.search), startAt = +((location.search.match(/start=([\d.]+)/) || [])[1] || 0);
+  if (mini) document.documentElement.classList.add('mini');
   window.addEventListener('message', function (e) {
     if (e.data && e.data.demoTheme) document.documentElement.classList.toggle('light', e.data.demoTheme === 'light');
   });
@@ -61,7 +63,10 @@
       '<div class="track" id="track"><div class="tb"><i id="prog"></i></div></div><div class="tm2" id="time">0:00</div></div>' +
       '<p class="note">Sample walkthrough · ' + c.name + ' · all names and figures are illustrative</p></div>');
     stage = document.getElementById('stage'); vp = document.getElementById('vp');
-    function fit() { K = vp.clientWidth / 1280; stage.style.transform = 'scale(' + K + ')'; }
+    function fit() {
+      if (mini) { K = Math.max(vp.clientWidth / 1280, vp.clientHeight / 720); stage.style.transform = 'translate(' + (vp.clientWidth - 1280 * K) / 2 + 'px,' + (vp.clientHeight - 720 * K) / 2 + 'px) scale(' + K + ')'; return; }
+      K = vp.clientWidth / 1280; stage.style.transform = 'scale(' + K + ')';
+    }
     addEventListener('resize', fit); fit();
     ACTS.sort(function (a, b) { return a.at - b.at; });
     var track = document.getElementById('track');
@@ -71,7 +76,7 @@
       var b = document.createElement('span'); b.className = 'lb'; b.style.left = l + '%'; b.textContent = c.labels[i][0]; track.appendChild(b);
     });
     var labels = track.querySelectorAll('.lb');
-    var t = 0, playing = !embed, last = null;
+    var t = 0, playing = !embed || mini, last = null;
     function reset() { stage.innerHTML = shell(c); cur = { x: 600, y: 400 }; place(); ACTS.forEach(function (a) { a.st = {}; a.done = false; }); }
     function apply() { ACTS.forEach(function (a) { if (a.done || t < a.at) return; var p = a.dur ? Math.min(1, (t - a.at) / a.dur) : 1; a.fn(p, a.st); if (p >= 1) a.done = true; }); }
     function seek(nt) { t = Math.max(0, Math.min(T - .01, nt)); reset(); stage.classList.add('instant'); apply(); void stage.offsetWidth; stage.classList.remove('instant'); ui(); }
@@ -89,7 +94,8 @@
     addEventListener('keydown', function (e) { if (e.code === 'Space') { e.preventDefault(); document.getElementById('play').click(); } });
     window.__seek = function (x) { playing = false; seek(x); };
     reset(); apply(); ui(); requestAnimationFrame(loop);
-    if (embed) {
+    if (mini && startAt) { seek(startAt); playing = true; ui(); }
+    if (embed && !mini) {
       var started = false;
       if ('IntersectionObserver' in window) new IntersectionObserver(function (en) {
         if (en[0].isIntersecting && !started) { started = true; playing = true; ui(); }

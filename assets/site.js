@@ -303,7 +303,7 @@
   function demoHtml(c) {
     if (!c.demo) return '';
     return '<div class="demo-wrap"><div class="flow-head"><h3>Watch it work</h3><span class="flow-legend">A one minute walkthrough of the real flow, with sample data</span></div>' +
-      '<iframe class="demo-frame" src="' + esc(c.demo) + '?v=2&theme=' + demoTheme() + '" title="Walkthrough of ' + esc(c.title) + '" loading="lazy"></iframe></div>';
+      '<iframe class="demo-frame" src="' + esc(c.demo) + '?v=3&theme=' + demoTheme() + '" title="Walkthrough of ' + esc(c.title) + '" loading="lazy"></iframe></div>';
   }
   document.querySelectorAll('iframe.demo-frame[data-src]').forEach(function (f) { f.src = f.getAttribute('data-src') + '&theme=' + demoTheme(); });
   window.addEventListener('message', function (e) {
