@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-mascot="off">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +13,8 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' rx='48' fill='%2305070C'/%3E%3Cg transform='translate(70,168) rotate(-25) scale(0.62)'%3E%3Cpolyline points='-27,-30 28,0 -27,30' fill='none' stroke='%235B6779' stroke-width='18'/%3E%3C/g%3E%3Cg transform='translate(118,128) rotate(-12) scale(0.82)'%3E%3Cpolyline points='-27,-30 28,0 -27,30' fill='none' stroke='%239FAABA' stroke-width='18'/%3E%3C/g%3E%3Cg transform='translate(172,72) rotate(2) scale(1.05)'%3E%3Cpolyline points='-27,-30 28,0 -27,30' fill='none' stroke='%23E2E8F0' stroke-width='18'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/site.css?v=14">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@600;700&display=swap">
+<link rel="stylesheet" href="assets/site.css?v=25">
 <script>(function(){try{var t=localStorage.getItem('solviqo-theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <script>try{if(!sessionStorage.getItem('sv-seen')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('is-loading');}catch(e){}</script>
 </head>
@@ -156,19 +156,53 @@
     </div>
   </section>
 
-  <section class="sec">
-    <div class="wrap">
-      <div class="sec-h rev">
-        <span class="kick"><b>04</b> How it works</span>
-        <h2>From idea to a working app in weeks.</h2>
-        <p>Scoped tightly enough that the date holds, and built properly enough that it lasts.</p>
-      </div>
-      <div class="steps rev" id="steps">
-        <div class="spine" aria-hidden="true"><i></i></div>
-        <div class="step"><span class="t">Step one</span><h3>Scope</h3><p>A short call. We find the problem worth solving first and write down exactly what a working app looks like on day one.</p></div>
-        <div class="step"><span class="t">Step two</span><h3>Design and build</h3><p>Two to six weeks. Clean screens, a real database, the right access for every role, connected to the systems you already use.</p></div>
-        <div class="step"><span class="t">Step three</span><h3>Launch</h3><p>Your team starts using it. We stay close through the first weeks live, fix what real use reveals, and hand over clear documentation.</p></div>
-        <div class="step"><span class="t">Step four</span><h3>Grow</h3><p>Most clients come back for the next feature or the next system once the first proves out. No retainer needed to make that true.</p></div>
+  <section class="story" id="story">
+    <div class="story-track">
+      <div class="story-sticky">
+        <div class="wrap story-grid">
+          <div class="story-copy">
+            <span class="kick"><b>04</b> One app, start to finish</span>
+            <h2 class="story-h">From first request to final report, in one place.</h2>
+            <ol class="story-ch">
+              <li data-c="0"><span>01</span><div><h3>A request comes in</h3><p>Anyone raises it in seconds, from a laptop or a phone. No forms emailed around.</p></div></li>
+              <li data-c="1"><span>02</span><div><h3>The right person approves</h3><p>They get it on their phone and decide in one tap, wherever they are.</p></div></li>
+              <li data-c="2"><span>03</span><div><h3>The work gets done</h3><p>Everyone sees who owns what and what is next. Nothing waits quietly on a desk.</p></div></li>
+              <li data-c="3"><span>04</span><div><h3>Everyone sees the result</h3><p>Live numbers for the whole business, with no report built by hand.</p></div></li>
+            </ol>
+            <div class="story-prog"><i></i></div>
+            <div class="sg-hint"><span class="ms"></span>Keep scrolling, the screens stay put</div>
+          </div>
+          <div class="story-stage" aria-hidden="true">
+            <div class="sg-back"></div>
+            <div class="sg-top"><span class="sg-live"><i></i>Live demo &middot; scroll to play</span><span class="sg-cnt">Step <b class="sg-n">01</b> / 04</span></div>
+            <span class="sg-call in">A request is being typed in</span>
+            <div class="lap"><div class="lap-scr">
+              <div class="lap-bar"><i></i><i></i><i></i><span>app.yourcompany.com</span></div>
+              <div class="ss s0"><h5>New purchase request</h5>
+                <div class="f"><label>Item</label><div><b class="ty" style="--n:22">12 laptops for design team</b></div></div>
+                <div class="f"><label>Amount</label><div><b class="ty" style="--n:8;--d:1.1s">$14,400</b></div></div>
+                <div class="f"><label>Needed by</label><div><b class="ty" style="--n:9;--d:1.7s">Monday 29</b></div></div>
+                <span class="sb">Submit request</span></div>
+              <div class="ss s1"><h5>Request #218</h5>
+                <div class="pipe"><span class="ok">Requested</span><i></i><span class="now">Approved</span><i></i><span>Ordered</span><i></i><span>Delivered</span></div>
+                <div class="audit"><p class="a1">Priya raised the request<em>09:12</em></p><p class="a2">Budget check passed automatically<em>09:12</em></p><p class="a3">Approved by Arjun on mobile<em>09:14</em></p></div></div>
+              <div class="ss s2"><h5>This week</h5>
+                <div class="task t1"><i></i>Order placed with supplier<em>Meera</em></div>
+                <div class="task t2"><i></i>Delivery booked for Friday<em>Rahul</em></div>
+                <div class="task t3"><i></i>Laptops set up and handed over<em>IT team</em></div>
+                <div class="bar"><b></b></div></div>
+              <div class="ss s3"><h5>Operations, live</h5>
+                <div class="k"><div><small>Requests</small><b>1,284</b></div><div><small>On time</small><b>98%</b></div><div><small>Avg approval</small><b>2 min</b></div></div>
+                <div class="bars"><i style="--h:40%"></i><i style="--h:62%"></i><i style="--h:48%"></i><i style="--h:74%"></i><i style="--h:66%"></i><i style="--h:88%" class="a"></i></div></div>
+            </div><div class="lap-base"></div></div>
+            <div class="phn"><div class="phn-scr">
+              <div class="ps s0"><small>YOUR APP</small><b>Request sent</b><p>Arjun has been notified.</p><span class="chk">&#10003;</span></div>
+              <div class="ps s1"><small>NEEDS YOU</small><b>$14,400 laptops</b><p>Budget available.</p><span class="ab">Approve</span></div>
+              <div class="ps s2"><small>UPDATE</small><b>Delivery Friday</b><p>2 of 3 steps done.</p><span class="ring"></span></div>
+              <div class="ps s3"><small>THIS WEEK</small><b>98% on time</b><p>Up 12% since launch.</p><span class="spark"></span></div>
+            </div></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -208,7 +242,30 @@
   <section class="sec">
     <div class="wrap">
       <div class="sec-h rev">
-        <span class="kick"><b>06</b> Recent work</span>
+        <span class="kick"><b>06</b> Proof, not promises</span>
+        <h2>Real systems, in use every day.</h2>
+        <p>We keep client names private. Every number here comes straight from projects we have shipped.</p>
+      </div>
+      <div class="proof stag">
+        <div class="pf-n"><div class="v"><span data-count="4" data-dec="0">0</span></div><div class="l">Business systems live and in daily use</div></div>
+        <div class="pf-n"><div class="v"><span data-count="3.1" data-dec="1">0</span>k+</div><div class="l">Staff records kept in sync automatically</div></div>
+        <div class="pf-n"><div class="v"><span data-count="4" data-dec="0">0</span> wks</div><div class="l">Longest time from scope to live so far</div></div>
+        <div class="pf-n"><div class="v"><span data-count="4" data-dec="0">0</span></div><div class="l">Industries served, with more on the way</div></div>
+      </div>
+      <div class="inds stag">
+        <div class="ind"><svg viewBox="0 0 80 64"><path class="st" d="M14 60V14h6v46M8 60h28"/><g class="i-jib"><path class="st" d="M17 14h50M17 14l10-8h2"/><path class="st th" d="M58 14v14"/><rect x="53" y="28" width="10" height="7" rx="1" class="fa"/></g></svg><span>Construction</span></div>
+        <div class="ind"><svg viewBox="0 0 80 64"><rect x="18" y="8" width="44" height="52" rx="3" class="st"/><g class="i-win"><rect x="24" y="14" width="7" height="6" rx="1" style="--d:0.00s"/><rect x="36" y="14" width="7" height="6" rx="1" style="--d:0.25s"/><rect x="48" y="14" width="7" height="6" rx="1" style="--d:0.50s"/><rect x="24" y="25" width="7" height="6" rx="1" style="--d:0.75s"/><rect x="36" y="25" width="7" height="6" rx="1" style="--d:1.00s"/><rect x="48" y="25" width="7" height="6" rx="1" style="--d:1.25s"/><rect x="24" y="36" width="7" height="6" rx="1" style="--d:1.50s"/><rect x="36" y="36" width="7" height="6" rx="1" style="--d:1.75s"/><rect x="48" y="36" width="7" height="6" rx="1" style="--d:2.00s"/><rect x="24" y="47" width="7" height="6" rx="1" style="--d:2.25s"/><rect x="36" y="47" width="7" height="6" rx="1" style="--d:2.50s"/><rect x="48" y="47" width="7" height="6" rx="1" style="--d:2.75s"/></g></svg><span>Facilities</span></div>
+        <div class="ind"><svg viewBox="0 0 80 64"><path class="st" d="M10 60h60M22 60l10-40h4l10 40M27 42h14"/><g class="i-pump"><path class="st th" d="M34 22l30-8"/><circle cx="64" cy="14" r="3.5" class="fa"/></g><path class="i-flame fa" d="M58 60c-6 0-8-5-6-10 1 3 3 3 3 3 0-5 3-8 6-10-1 4 3 6 3 10 0 4-2 7-6 7z"/></svg><span>Oil and gas</span></div>
+        <div class="ind"><svg viewBox="0 0 80 64"><path class="st i-road" d="M0 56h80"/><g class="i-truck"><rect x="12" y="28" width="32" height="20" rx="2" class="fa"/><path class="st" d="M44 34h10l8 8v6H44z"/><circle cx="22" cy="50" r="4" class="st"/><circle cx="54" cy="50" r="4" class="st"/></g></svg><span>Logistics</span></div>
+        <div class="ind next"><svg viewBox="0 0 80 64"><circle cx="40" cy="32" r="18" class="st dash"/><path class="st th" d="M40 24v16M32 32h16"/></svg><span>Your industry next</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-h rev">
+        <span class="kick"><b>07</b> Recent work</span>
         <h2>What this looks like once it is running.</h2>
         <p>A few of the systems we have shipped. Client names are withheld by agreement, the scope and outcomes are exactly as delivered.</p>
       </div>
@@ -220,7 +277,7 @@
   <section class="sec">
     <div class="wrap">
       <div class="sec-h rev">
-        <span class="kick"><b>07</b> From the studio</span>
+        <span class="kick"><b>08</b> From the studio</span>
         <h2>Notes on building software that fits.</h2>
       </div>
       <div class="grid2 stag" id="homePosts"></div>
@@ -271,7 +328,8 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=12"></script>
-<script src="assets/features.js?v=4"></script>
+<script src="assets/site.js?v=14"></script>
+<script src="assets/features.js?v=8"></script>
+<script src="assets/vsl.js?v=1"></script>
 </body>
 </html>

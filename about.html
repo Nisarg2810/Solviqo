@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-mascot="off">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +13,8 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Crect width='240' height='240' rx='48' fill='%2305070C'/%3E%3Cg transform='translate(70,168) rotate(-25) scale(0.62)'%3E%3Cpolyline points='-27,-30 28,0 -27,30' fill='none' stroke='%235B6779' stroke-width='18'/%3E%3C/g%3E%3Cg transform='translate(118,128) rotate(-12) scale(0.82)'%3E%3Cpolyline points='-27,-30 28,0 -27,30' fill='none' stroke='%239FAABA' stroke-width='18'/%3E%3C/g%3E%3Cg transform='translate(172,72) rotate(2) scale(1.05)'%3E%3Cpolyline points='-27,-30 28,0 -27,30' fill='none' stroke='%23E2E8F0' stroke-width='18'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/site.css?v=14">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@600;700&display=swap">
+<link rel="stylesheet" href="assets/site.css?v=25">
 <script>(function(){try{var t=localStorage.getItem('solviqo-theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
 <script>try{if(!sessionStorage.getItem('sv-seen')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('is-loading');}catch(e){}</script>
 </head>
@@ -101,6 +101,27 @@
     </div>
   </section>
 
+  <section class="sec weeks-sec">
+    <div class="wrap">
+      <div class="sec-h rev"><span class="kick"><b>02</b> How a project runs</span><h2>Four weeks, one working app. Here is what you get each week.</h2></div>
+      <div class="weeks">
+        <div class="wk-stage" aria-hidden="true"><div class="wk-card">
+          <div class="wv w0"><div class="doc"><h6>Project scope</h6><i style="--w:88%"></i><i style="--w:72%"></i><i style="--w:80%"></i>
+            <p class="ck c1">One workflow, end to end</p><p class="ck c2">Four user roles</p><p class="ck c3">Connects to your CRM</p></div><span class="tag">Fixed price agreed</span></div>
+          <div class="wv w1"><div class="wf"><b class="h"></b><b class="c"></b><b class="c"></b><b class="c"></b><b class="t"></b></div><span class="cur"></span><span class="tag">Clickable design approved</span></div>
+          <div class="wv w2"><div class="bld"><p><span>Database</span><i style="--w:100%"></i></p><p><span>Sign in and roles</span><i style="--w:100%;--d:.35s"></i></p><p><span>CRM connection</span><i style="--w:100%;--d:.7s"></i></p><p><span>Alerts</span><i style="--w:100%;--d:1.05s"></i></p></div><span class="tag">Working build on your data</span></div>
+          <div class="wv w3"><div class="live"><span class="dot"></span><b>Live</b></div><div class="avs"><i></i><i></i><i></i><i></i><i></i><em>+38</em></div><span class="tag">Your team is using it</span></div>
+        </div></div>
+        <ol class="wk-list">
+          <li data-w="0"><span class="kick"><b>WEEK 1</b> Scope</span><h3>We agree exactly what gets built</h3><p>A short call, then a written scope: what the app does on day one, what waits for later, and a fixed price. No surprises after this point.</p></li>
+          <li data-w="1"><span class="kick"><b>WEEK 2</b> Design</span><h3>You click through it before we build it</h3><p>Real screens you can tap through and share with your team. You approve the look and the flow before any building starts.</p></li>
+          <li data-w="2"><span class="kick"><b>WEEK 3</b> Build</span><h3>It comes to life with your real data</h3><p>Sign in, roles, alerts and connections to the tools you already use, built properly and tested against how your team really works.</p></li>
+          <li data-w="3"><span class="kick"><b>WEEK 4</b> Launch</span><h3>Your team starts using it</h3><p>We launch, stay close through the first weeks, fix what real use reveals and hand over clear documentation. You own everything.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
   <section class="sec">
     <div class="wrap">
       <div class="panel pad rev" style="display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:start">
@@ -123,7 +144,7 @@
 
   <section class="sec">
     <div class="wrap">
-      <div class="sec-h rev"><span class="kick"><b>02</b> How we operate</span><h2>Four principles, held the same way on every project.</h2></div>
+      <div class="sec-h rev"><span class="kick"><b>03</b> How we operate</span><h2>Four principles, held the same way on every project.</h2></div>
       <div class="grid2 stag">
         <div class="card" data-tilt="6"><span class="num">PRINCIPLE 01</span><h3>Precise, not clever</h3><p>Every scope is written down before we start: what gets built, what it does on day one, and when it ships. No adjectives standing in for a delivery date.</p></div>
         <div class="card" data-tilt="6"><span class="num">PRINCIPLE 02</span><h3>Engineered, not experimental</h3><p>Role based access, a real database, a documented integration. We build the way a systems integrator ships to spec, not the way a prototype gets taped together.</p></div>
@@ -135,7 +156,7 @@
 
   <section class="sec">
     <div class="wrap">
-      <div class="sec-h rev"><span class="kick"><b>03</b> Who we work with</span><h2>Built for teams that have outgrown spreadsheets and off the shelf tools.</h2></div>
+      <div class="sec-h rev"><span class="kick"><b>04</b> Who we work with</span><h2>Built for teams that have outgrown spreadsheets and off the shelf tools.</h2></div>
       <div class="grid2 stag">
         <div class="card" data-tilt="6"><h3>The role</h3><p>Founders, operations leads and IT heads at businesses from twenty people to a few thousand, who know exactly what they need built and are tired of waiting for it.</p></div>
         <div class="card" data-tilt="6"><h3>The industry</h3><p>Any business whose work has outgrown its tools. We have shipped for construction, facilities, logistics and energy, and the same approach works for services, retail, healthcare and new products.</p></div>
@@ -184,7 +205,8 @@
   </div>
 </footer>
 
-<script src="assets/site.js?v=12"></script>
-<script src="assets/features.js?v=4"></script>
+<script src="assets/site.js?v=14"></script>
+<script src="assets/features.js?v=8"></script>
+<script src="assets/vsl.js?v=1"></script>
 </body>
 </html>

@@ -1,5 +1,201 @@
 [
   {
+    "slug": "custom-vs-off-the-shelf",
+    "title": "Custom software or off the shelf? A simple way to decide",
+    "category": "Buying software",
+    "date": "2026-09-18",
+    "readTime": "6 min read",
+    "art": 1,
+    "excerpt": "Off the shelf tools are cheaper on day one. Custom software is cheaper on day five hundred. Here is a plain test for which one your business actually needs.",
+    "body": [
+      {
+        "type": "p",
+        "text": "Every growing business hits the same moment. The tool you signed up for in year one starts bending the way you work instead of the other way round. People keep side spreadsheets. Someone becomes the unofficial expert in workarounds. The question arrives: do we find a better product, or do we build our own?"
+      },
+      {
+        "type": "p",
+        "text": "There is no universal answer, but there is a reliable way to decide. It comes down to one question: is this process a commodity, or is it how you win?"
+      },
+      {
+        "type": "h3",
+        "text": "Buy when the process is the same everywhere"
+      },
+      {
+        "type": "p",
+        "text": "Payroll, email, accounting, video calls. These work more or less the same in every company, and the products built for them are excellent because millions of customers shaped them. Building your own version would cost more and deliver less. Buy these, configure them well, and move on."
+      },
+      {
+        "type": "h3",
+        "text": "Build when the process is what makes you different"
+      },
+      {
+        "type": "p",
+        "text": "How you quote a job, allocate a crew, approve a purchase or track a site inspection is often specific to your business. That is exactly where off the shelf tools struggle, because they are built for the average company, and your advantage lives in the parts that are not average."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Your team keeps a spreadsheet next to the official tool",
+          "The same information is typed into two or three systems",
+          "Approvals happen in chat because the tool cannot model them",
+          "You pay for a large platform and use ten percent of it",
+          "Reports are built by hand before every meeting"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "If three or more of these sound familiar, the tool is costing you more in workarounds than it saves in licence fees."
+      },
+      {
+        "type": "h3",
+        "text": "The middle path most people miss"
+      },
+      {
+        "type": "p",
+        "text": "It is rarely all or nothing. The best setups keep the commodity tools and add a small custom layer on top: one app for the process that matters, connected to the systems you already pay for. You keep your accounting package and your CRM. You stop forcing them to do a job they were never designed for."
+      },
+      {
+        "type": "quote",
+        "text": "Buy for the parts of the business that look like everyone else. Build for the parts that make you you."
+      },
+      {
+        "type": "h3",
+        "text": "What it should cost you to find out"
+      },
+      {
+        "type": "p",
+        "text": "Not much. A good studio should be able to tell you in one short call whether a custom build makes sense, and if it does not, say so. If the answer is yes, the first release should be scoped tightly enough to ship in weeks, so you learn quickly whether it was the right call."
+      }
+    ]
+  },
+  {
+    "slug": "what-an-mvp-should-include",
+    "title": "What your first release should include, and what it should not",
+    "category": "How we work",
+    "date": "2026-09-17",
+    "readTime": "5 min read",
+    "art": 2,
+    "excerpt": "The first version of an app has one job: prove that people will use it. Everything that does not serve that job can wait for version two.",
+    "body": [
+      {
+        "type": "p",
+        "text": "The most common way a software project goes wrong is not bad code. It is a first release that tries to do everything. It takes four months instead of four weeks, and by the time it launches, the problem has moved."
+      },
+      {
+        "type": "p",
+        "text": "A first release has one job: put a working tool in real hands and prove people will use it. Here is how we decide what makes the cut."
+      },
+      {
+        "type": "h3",
+        "text": "Must have on day one"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The one workflow that causes the most pain today, working end to end",
+          "Sign in, with the right people seeing the right things",
+          "The data you already have, brought across so nobody starts from zero",
+          "A way to see what is happening, even if it is one simple screen",
+          "Works on a phone, because that is where half your team will open it"
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Can wait for version two"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Every edge case the team can imagine",
+          "Custom themes, animations and settings pages",
+          "Integrations with systems that only one person uses",
+          "Advanced reports nobody has asked for yet",
+          "Features that exist because a competitor has them"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "None of these are bad ideas. They are simply better decided after launch, when real use tells you which ones matter."
+      },
+      {
+        "type": "quote",
+        "text": "Ship the smallest thing that removes the biggest headache. Then listen."
+      },
+      {
+        "type": "h3",
+        "text": "A quick test"
+      },
+      {
+        "type": "p",
+        "text": "For every feature on the list, ask: if this was missing on launch day, would people stop using the app? If the honest answer is no, it goes on the version two list. That list is not a graveyard. It is the plan for the next few weeks, informed by people actually using the thing."
+      }
+    ]
+  },
+  {
+    "slug": "how-fixed-price-projects-work",
+    "title": "How we price fixed price projects, and why it protects you",
+    "category": "Pricing",
+    "date": "2026-09-15",
+    "readTime": "5 min read",
+    "art": 0,
+    "excerpt": "Hourly billing rewards the builder for taking longer. Fixed price puts the risk where it belongs. Here is exactly how we arrive at a number.",
+    "body": [
+      {
+        "type": "p",
+        "text": "When a project is billed by the hour, every surprise is your problem. The estimate was forty hours, it took ninety, and the invoice follows the hours. You carry the risk of a job you cannot see inside."
+      },
+      {
+        "type": "p",
+        "text": "We work the other way. Every project has a price agreed in writing before work begins. Here is how we get there, and what it means for you."
+      },
+      {
+        "type": "h3",
+        "text": "Step one: a short scoping call"
+      },
+      {
+        "type": "p",
+        "text": "We ask about the process, who uses it, what systems it touches and what good looks like on day one. Most of the time, twenty to thirty minutes is enough."
+      },
+      {
+        "type": "h3",
+        "text": "Step two: a written scope"
+      },
+      {
+        "type": "p",
+        "text": "Within a few days you receive a short document: what gets built, what it does on launch, what is deliberately left for later, the timeline in weeks, and the price. No jargon and no padding."
+      },
+      {
+        "type": "h3",
+        "text": "Step three: the price holds"
+      },
+      {
+        "type": "p",
+        "text": "If something takes us longer than planned, that is our problem, not yours. The only thing that changes the price is a change to the scope, and that is always your decision, agreed in writing before any extra work starts."
+      },
+      {
+        "type": "list",
+        "items": [
+          "You know the full cost before you commit",
+          "You can compare it honestly against other options",
+          "There are no surprise invoices mid project",
+          "Changes are visible, deliberate and priced upfront"
+        ]
+      },
+      {
+        "type": "quote",
+        "text": "A fixed price is a promise. It forces both sides to agree on what done looks like before the work starts."
+      },
+      {
+        "type": "h3",
+        "text": "Why this works for us too"
+      },
+      {
+        "type": "p",
+        "text": "It keeps us honest about scope. If we cannot describe the first release clearly enough to price it, it is not ready to build yet, and it is far better to find that out on a call than in week six."
+      }
+    ]
+  },
+  {
     "slug": "scoping-a-sprint",
     "title": "A field guide to scoping a two week app sprint",
     "category": "How we work",

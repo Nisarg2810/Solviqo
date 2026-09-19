@@ -352,7 +352,7 @@
   function initBlog() {
     var list = doc.getElementById('postList'), detail = doc.getElementById('postDetail');
     if (!list && !detail) return;
-    fetch('data/posts.json?v=3').then(function (r) { return r.json(); }).then(function (posts) {
+    fetch('data/posts.json?v=4').then(function (r) { return r.json(); }).then(function (posts) {
       posts.sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
       var slug = slugParam();
       if (slug) {
@@ -424,7 +424,7 @@
 
   function initHomeTeasers() {
     var pt = doc.getElementById('homePosts'), ct = doc.getElementById('homeCases');
-    if (pt) fetch('data/posts.json?v=3').then(function (r) { return r.json(); }).then(function (p) {
+    if (pt) fetch('data/posts.json?v=4').then(function (r) { return r.json(); }).then(function (p) {
       p.sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
       pt.innerHTML = p.slice(0, 2).map(postCard).join(''); pt.classList.add('in'); paintCovers(pt); armTilt(pt);
     }).catch(function () {});
